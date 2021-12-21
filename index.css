@@ -1,23 +1,21 @@
 
 body{
-
     background-color: #202959;
     max-width: 450px;
     margin: auto;
 }
 
-h1{
-
+h1, p{
     color: rgb(219, 188, 188);
-    font-family: 'Poppins', sans-serif ;
+    font-family: 'Archivo', sans-serif ;
 }
 
 h3{
     color: #1F243C;
-    font-family: 'Poppins', sans-serif ;
+    font-family: 'Archivo', sans-serif ;
 }
 
-p{font-family: 'Poppins', sans-serif;
+p{font-family: 'Archivo', sans-serif;
 color: white;
 }
 
