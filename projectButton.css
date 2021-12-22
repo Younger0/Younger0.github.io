@@ -34,3 +34,10 @@
             font-size:1.5em;
             background: rgba(0,0,0,0.08);
         }
+
+<button type="button" class="button">
+        <span class="button__text">Project</span>
+        <span class="button__icon">
+            <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+        </button>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
