@@ -9,12 +9,29 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="index.css">
-    
-    <style>
+
+   <link rel="stylesheet" href="index.css">
+
+   <style>
         @import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet');
         </style>
+
+    <style>
+        .button {
+            display: inline-flex;
+            height: 50px;
+            padding: 0;
+            background: #8F9AD1;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            overflow: hidden;
+            font-family: 'Archivo', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+    </style>    
 
 <!--The next three lines allow the Vega embed-->
 <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
@@ -31,6 +48,14 @@
 
 
 <!-- ///////////////////  START BODY //////////////////////////////////// -->
+
+    <button type="button" class="button">
+        <span class="button__text">Project</span>
+        <span class="button__icon">
+            <ion-icon name="albums-outline"></ion-icon>
+        </button>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
 
 <body>
 
