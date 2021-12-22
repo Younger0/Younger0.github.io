@@ -11,26 +11,20 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
    <link rel="stylesheet" href="index.css">
-   <link rel="stylesheet" href="projectButton.css">
 
    <style>
         @import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet');
-    </style>
+        </style>  
 
 <!--The next three lines allow the Vega embed-->
 <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
-    
+
 </head>
 
 <body>
     <h1>Alex Younger: Data Science 2021</h1>
-    
-    <div class="wrap">
-    <a class="projectButton" href="project">Project</a>
-  </div>
-
 
 <!-- ///////////////////  HEAD //////////////////////////////////// -->
 
@@ -38,6 +32,51 @@
 
 <!-- ///////////////////  START BODY //////////////////////////////////// -->
 
+    <button type="button" class="button">
+        <span class="button__text">Project</span>
+        <span class="button__icon">
+            <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+        </button>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        
+        <style>
+        .button {
+            display: inline-flex;
+            height: 50px;
+            padding: 0;
+            background: #8F9AD1;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            overflow: hidden;
+            font-family: 'Archivo', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background: #AAAEBF
+        }
+
+        .button:active {
+            background: #6B86F9
+        }
+
+        .button__text,
+        .button__icon{
+            display: inline-flex;
+            align-items: center;
+            padding: 0 24px;
+            color: black;
+            height: 100%;
+        }
+
+        .button__icon {
+            font-size:1.5em;
+            background: rgba(0,0,0,0.08);
+        }
+    </style> 
 </body>
 
 <body>
