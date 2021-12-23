@@ -12,12 +12,6 @@ h1, p{
     font-size:50px;
 }
 
-.chart {
-    border: 5px;
-    border-radius: 5px;
-    align-items: center;
-}
-
 h2, p{
     color: #ffffff;
     font-family: 'Archivo';
@@ -28,14 +22,13 @@ h2, p{
 }
 
 .chart{
-    width: 330px;
+    width: 400px;
     border-width: 10px;
     background-color: white;
     border-style: solid;
     border-radius: 5px;
-    border-color: white;
+    border-color: #FFAA00;
     margin: auto;
-
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet');
