@@ -21,6 +21,14 @@ h2, p{
     display:flex;
 }
 
+h3, p{
+    color: #ffffff;
+    font-family: 'Archivo';
+    align-items: top;
+    text-align: left;
+    font-size: 30px;
+    display:flex;
+}
 .chart{
     width: 400px;
     border-width: 10px;
