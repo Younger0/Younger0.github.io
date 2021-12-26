@@ -48,7 +48,7 @@
     },
 
     "color": {
-      "field": "areaName",
+      "field": "Finish",
       "type": "nominal",
       "scale": {"scheme": "set1"},
       "title": "LEGEND TITLE",
