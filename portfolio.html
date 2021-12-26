@@ -39,7 +39,7 @@
     <h3>Week 2 - Embedding Charts</h3>
 
 <p style="font-size: 20px; color: black; border:3px; border-radius: 5px; border-style:solid; border-color:black; padding: 0.5em; background-color: #E9DDB1;"> 
-    These three charts were taken directly from the Rapid Charts website.</p>
+    These two charts were taken directly from the Rapid Charts website.</p>
 </p>
 <!--Chart 1; week 2 -->
 <div class="chart" id="chart1">
@@ -61,11 +61,29 @@
 
 <p></p>
 
-<!--Chart 3; week 2 -->
+
+
+<h4>Week 3 - Hosting Data</h4>
+<p style="font-size: 20px; color: black; border:3px; border-radius: 5px; border-style:solid; border-color:black; padding: 0.5em; background-color: #E9DDB1;"> 
+This first chart uses a government API to track the number of COVID-19 vaccinations in three UK cities.</p>
+
+<!--Chart 3; week 3 -->
 <div class="chart" id="chart3">
     <script>
-      var myChart3 = "chart3_decliningpopulations.json";
+      var myChart2 = "CovidVaccineData.json";
       vegaEmbed('#chart3', myChart3);
+    </script>
+</div>
+
+<p style="font-size: 20px; color: black; border:3px; border-radius: 5px; border-style:solid; border-color:black; padding: 0.5em; background-color: #E9DDB1;">
+This second chart shows the number of COVID-19 related deaths in the same three UK cities. This data is hosted on GitHub rather than from an API.
+</p>
+
+<!--Chart 4; week 3 -->
+<div class="chart" id="chart4">
+    <script>
+      var myChart2 = "CovidDeaths28Days.json";
+      vegaEmbed('#chart4', myChart4);
     </script>
 </div>
 
