@@ -11,15 +11,15 @@
   },
   
    "data": {
-    "url": "",
+    "url": "https://raw.githubusercontent.com/Younger0/Younger0.github.io/main/brysondechambeau.csv",
     "format": {"type": "csv"}
   },
 
    "transform":[
       
       {"filter": {
-        "field": "areaName", 
-        "oneOf": ["Bristol, City of", "Westminster", "Bradford"]}
+        "field": "player", 
+        "oneOf": ["Bryson DeChambeau"]}
         }
 
 
@@ -41,7 +41,7 @@
     },
 
     "y": {
-      "field": "cumVaccinationCompleteCoverageByVaccinationDatePercentage",
+      "field": "Finish",
       "type": "quantitative",
       "title": null,
       "axis": {"grid": false}
