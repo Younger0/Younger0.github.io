@@ -1,0 +1,76 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+
+  "description": "Productivity UK",
+
+   "title": {
+    "text": "Solar Flares",
+    "subtitle":"Number of Solar Flares occurred in period Oct 10-Nov 10, 2021 Source: ONS",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+  
+  "data": {
+    "url": "{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+
+  "description": "Solar Flares",
+  
+  "data": {
+    "url": "https://api.nasa.gov/DONKI/FLR?startDate=2021-10-10&endDate=2021-11-10&api_key=OdoIpq2ZgvRKzjUwpFZRMbh8cw62cMqEK3tu6AUd"},
+  "height": 300,
+  "width": 345,
+  "mark": {
+    "type": "line",
+    "point": false,
+    "interpolate": "monotone",
+    "color": "blueviolet"
+  },
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "labelSeparation": 20,
+        "ticks": false
+      }
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": "",
+      "axis": {"grid": false}
+    }
+  }
+}"},
+  "height": 300,
+  "width": 345,
+  "mark": {
+    "type": "line",
+    "point": false,
+    "interpolate": "monotone",
+    "color": "blueviolet"
+  },
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "labelSeparation": 20,
+        "ticks": false
+      }
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": "",
+      "axis": {"grid": false}
+    }
+  }
+}
