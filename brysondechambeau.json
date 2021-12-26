@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+  "title": {
+    "text": "Bryson DeChambeau Tournament Positions",
+    "subtitle":"Tournament Finishing Position 2020/2021 Season",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+  
+   "data": {
+    "url": "",
+    "format": {"type": "csv"}
+  },
+
+   "transform":[
+      
+      {"filter": {
+        "field": "areaName", 
+        "oneOf": ["Bristol, City of", "Westminster", "Bradford"]}
+        }
+
+
+    ],
+  
+  
+  "height": 300,
+  "width": 310,
+   
+  "mark": {"type": "line", "point": false},
+ 
+  "encoding": {
+
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null,
+      "axis": {"grid": false}
+    },
+
+    "y": {
+      "field": "cumVaccinationCompleteCoverageByVaccinationDatePercentage",
+      "type": "quantitative",
+      "title": null,
+      "axis": {"grid": false}
+    },
+
+    "color": {
+      "field": "areaName",
+      "type": "nominal",
+      "scale": {"scheme": "set1"},
+      "title": "LEGEND TITLE",
+      "legend": {
+        "orient": "top-left", 
+        "fillColor": "#FcFdFd"}
+    }
+}
+}
