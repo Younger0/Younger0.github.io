@@ -50,11 +50,7 @@
     "color": {
       "field": "Finish",
       "type": "nominal",
-      "scale": {"scheme": "set1"},
-      "title": "LEGEND TITLE",
-      "legend": {
-        "orient": "top-left", 
-        "fillColor": "#FcFdFd"}
+      "scale": {"scheme": "set1"}
     }
 }
 }
