@@ -28,14 +28,14 @@
 
     "encoding": {
       "x": {
-          "field": "date",
+          "field": "wb:date",
           "type": "temporal",
           "title":null,
           "axis": {
         "grid": false}},
  
       "y": {
-          "field": "value",
+          "field": "wb:value",
           "type": "quantitative",
           "title":null}
     }
