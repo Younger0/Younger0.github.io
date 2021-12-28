@@ -1,60 +1,55 @@
-
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+{"$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   
+  "description": "Coronavirus cases",
+  
+  "data": {
+    "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2021-01-01&endtime=2021-12-01&minmagnitude=2",
+    "format": {"type": "csv"}
+  },
+
   "title": {
-    "text": "Earthquakes Occurring in the U.S.",
-    "subtitle":"Magnitude greater or equal to 5.0 Jan-Dec 2021",
+    "text": "Earthquake Occurance - U.S.",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
     "color": "black"
   },
-  
-   "data": {
-    "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2021-01-01&endtime=2021-12-01&minmagnitude=5",
-    "format": {"type": "csv"}
-  },
-
-   "transform":[
-      
-      {"filter": {
-        "field": "mag", 
-        "oneOf": [">=5"]}
-        }
 
 
-    ],
-  
-  
+
   "height": 300,
-  "width": 310,
-   
-  "mark": {"type": "line", "point": false},
- 
+  
+  "width": 280,
+  
+  "mark": {"type": "bar", "width":10},
+  
+  
+  "transform": [
+    {
+      "filter": {
+        "field": "date",
+        "range": [
+          {"year": 2021, "month": "jan", "date": 1},
+          {"year": 2021, "month": "dec", "date": 1}
+        ]
+      }
+    }
+  ],
+
   "encoding": {
-
-    "x": {
-      "field": "date",
-      "type": "temporal",
-      "title": null,
-      "axis": {"grid": false}
-    },
-
+    "x": {"field": "date", "type": "temporal", "title": null},
     "y": {
       "field": "mag",
       "type": "quantitative",
-      "title": null,
-      "axis": {"grid": false}
+      "title": null
     },
-
+    
+      
     "color": {
       "field": "mag",
       "type": "nominal",
-      "scale": {"scheme": "set1"},
-      "title": "Magnitude",
-      "legend": {
-        "orient": "top-left", 
-        "fillColor": "#FcFdFd"}
+      "legend": null,
+      "scale": {"scheme": "inferno"}
     }
-}
+  }
 }
