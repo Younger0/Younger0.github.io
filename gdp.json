@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
     "data": {
-       "url": "https://api.worldbank.org/v2/country/chn/indicator/NY.GDP.MKTP.CD?date=2000M01:2021M12",
+       "url": "https://api.worldbank.org/v2/country/chn/indicator/NY.GDP.MKTP.CD?",
        "format": {
            "type":"xml",
            "property": "data"}},
