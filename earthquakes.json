@@ -15,6 +15,15 @@
     "format": {"type": "csv"}
   },
   
+   "transform":[
+      
+      {"filter": {
+        "field": "mag", 
+      }
+        }
+
+
+    ],
   
   "height": 300,
   "width": 310,
