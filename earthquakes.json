@@ -8,7 +8,7 @@
   },
 
   "title": {
-    "text": "Earthquake Occurance - U.S.",
+    "text": "Earthquake Occurrence - U.S.",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -23,19 +23,6 @@
   
   "mark": {"type": "bar", "width":10},
   
-  
-  "transform": [
-    {
-      "filter": {
-        "field": "date",
-        "range": [
-          {"year": 2021, "month": "jan", "date": 1},
-          {"year": 2021, "month": "dec", "date": 1}
-        ]
-      }
-    }
-  ],
-
   "encoding": {
     "x": {"field": "date", "type": "temporal", "title": null},
     "y": {
@@ -44,12 +31,6 @@
       "title": null
     },
     
-      
-    "color": {
-      "field": "mag",
-      "type": "nominal",
-      "legend": null,
-      "scale": {"scheme": "inferno"}
-    }
+   
   }
 }
