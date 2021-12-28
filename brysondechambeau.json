@@ -2,8 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   
   "title": {
-    "text": "Bryson DeChambeau Tournament Positions",
-    "subtitle":"Tournament Finishing Position 2020/2021 Season",
+    "text": "Bryson DeChambeau Tournament Finishes",
+    "subtitle":"Tournament Finishes in 2020/21 Season",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -11,14 +11,14 @@
   },
   
    "data": {
-    "url": "https://raw.githubusercontent.com/Younger0/Younger0.github.io/main/brysondechambeau.csv",
+    "url": "https://github.com/Younger0/Younger0.github.io/main/brysondechambeau.csv",
     "format": {"type": "csv"}
   },
 
    "transform":[
       
       {"filter": {
-        "field": "player", 
+        "field": "Player", 
         "oneOf": ["Bryson DeChambeau"]}
         }
 
@@ -44,14 +44,17 @@
       "field": "Finish",
       "type": "quantitative",
       "title": null,
-      "axis": {"grid": false},
-      "range": ([100, 1]),
+      "axis": {"grid": false}
     },
 
     "color": {
-      "field": "Finish",
+      "field": "areaName",
       "type": "nominal",
-      "scale": {"scheme": "set1"}
+      "scale": {"scheme": "set1"},
+      "title": "LEGEND TITLE",
+      "legend": {
+        "orient": "top-left", 
+        "fillColor": "#FcFdFd"}
     }
 }
 }
