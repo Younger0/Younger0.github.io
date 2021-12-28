@@ -4,7 +4,7 @@
     "data": {
        "url": "https://api.worldbank.org/v2/country/chn/indicator/NY.GDP.MKTP.CD?date=2000M01:2021M12",
        "format": {
-           "type":"json",
+           "type":"xml",
            "property": "data"}},
 
 
