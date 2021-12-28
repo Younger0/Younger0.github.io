@@ -3,7 +3,7 @@
   
   "title": {
     "text": "Earthquakes Occurring in the U.S.",
-    "subtitle":"Magnitude greater than 5.0 Jan-Dec 2021",
+    "subtitle":"Magnitude greater or equal to 5.0 Jan-Dec 2021",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -19,7 +19,7 @@
       
       {"filter": {
         "field": "mag", 
-        "oneOf": [">5"]}
+        "oneOf": [">=5"]}
         }
 
 
