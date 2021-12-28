@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+  "title": {
+    "text": "Complete Vaccinations",
+    "subtitle":"Comparison of three UK towns and cities",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+  
+   "data": {
+    "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=xml&starttime=2021-01-01&endtime=2021-12-01&minmagnitude=5",
+    "format": {"type": "csv"}
+  },
+
+   "transform":[
+      
+      {"filter": {
+        "field": "areaName", 
+        "oneOf": ["California"]}
+        }
+
+
+    ],
+  
+  
+  "height": 300,
+  "width": 310,
+   
+  "mark": {"type": "line", "point": false},
+ 
+  "encoding": {
+
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null,
+      "axis": {"grid": false}
+    },
+
+    "y": {
+      "field": "",
+      "type": "quantitative",
+      "title": null,
+      "axis": {"grid": false}
+    },
+
+    "color": {
+      "field": "areaName",
+      "type": "nominal",
+      "scale": {"scheme": "set1"},
+      "title": "LEGEND TITLE",
+      "legend": {
+        "orient": "top-left", 
+        "fillColor": "#FcFdFd"}
+    }
+}
+}
