@@ -41,7 +41,7 @@
       "field": "magnitude",
       "type": "quantitative",
       "scale": {"scheme": "set1"},
-      "title": "LEGEND TITLE",
+      "title": "Magnitude",
       "legend": {
         "orient": "top-left", 
         "fillColor": "#FcFdFd"}
