@@ -10,7 +10,7 @@
 
     "title": {
         "text": "China GDP ($)",
-        "subtitle": "2000-2021 Source: World Bank",
+        "subtitle": "1971-2021 Source: World Bank",
         "subtitleFontStyle":"italic",
         "subtitleFontSize":10,
         "anchor": "start",
