@@ -2,8 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   
   "title": {
-    "text": "Complete Vaccinations",
-    "subtitle":"Comparison of three UK towns and cities",
+    "text": "Earthquakes Occurring in the U.S.",
+    "subtitle":"Magnitude greater than 5.0 Jan-Dec 2021",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -51,7 +51,7 @@
       "field": "mag",
       "type": "nominal",
       "scale": {"scheme": "set1"},
-      "title": "UK Cities",
+      "title": "Magnitude",
       "legend": {
         "orient": "top-left", 
         "fillColor": "#FcFdFd"}
