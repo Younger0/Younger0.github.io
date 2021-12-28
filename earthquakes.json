@@ -11,8 +11,8 @@
   },
   
    "data": {
-    "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=xml&starttime=2021-01-01&endtime=2021-12-01&minmagnitude=5",
-    "format": {"type": "xml"}
+    "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2021-01-01&endtime=2021-12-01&minmagnitude=5",
+    "format": {"type": "csv"}
   },
   
   
@@ -31,14 +31,14 @@
     },
 
     "y": {
-      "field": "magnitude",
+      "field": "mag",
       "type": "quantitative",
       "title": null,
       "axis": {"grid": false}
     },
 
     "color": {
-      "field": "magnitude",
+      "field": "mag",
       "type": "quantitative",
       "scale": {"scheme": "set1"},
       "title": "Magnitude",
