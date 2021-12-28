@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   
   "title": {
-    "text": "Complete Joke",
+    "text": "Complete Vaccinations",
     "subtitle":"Comparison of three UK towns and cities",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
