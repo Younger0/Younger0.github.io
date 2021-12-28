@@ -1,9 +1,9 @@
-{
+
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   
   "title": {
-    "text": "Earthquakes in the U.S.",
-    "subtitle":"January-December 2021",
+    "text": "Complete Vaccinations",
+    "subtitle":"Comparison of three UK towns and cities",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -14,16 +14,17 @@
     "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=csv&starttime=2021-01-01&endtime=2021-12-01&minmagnitude=5",
     "format": {"type": "csv"}
   },
-  
+
    "transform":[
       
       {"filter": {
         "field": "mag", 
-      }
+        "oneOf": [">5"]}
         }
 
 
     ],
+  
   
   "height": 300,
   "width": 310,
@@ -48,9 +49,9 @@
 
     "color": {
       "field": "mag",
-      "type": "quantitative",
+      "type": "nominal",
       "scale": {"scheme": "set1"},
-      "title": "Magnitude",
+      "title": "UK Cities",
       "legend": {
         "orient": "top-left", 
         "fillColor": "#FcFdFd"}
