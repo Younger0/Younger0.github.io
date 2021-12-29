@@ -1,0 +1,79 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "description": "A cart with many tranforms to filter the data, so that we only get the data from 6 days ago, based on the 6 day lag in this data set. The color encoding is needed due to some bug in Vega, but it does not do anything meaningful to the chart",
+    
+    "XYZconfig": {
+        "background":"white",
+        "view": {
+          "stroke": "transparent"
+        }
+      },
+
+      "config": {
+        "background":"#122b39",
+        "view": {
+          "stroke": "transparent"}},
+      
+  
+
+    "title": {
+      "text": "Crime in Weymouth",
+      "subtitle":"Recent crimes by category",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "XYZcolor": "black",
+      "color":"#cbc7cf",
+      "subtitleColor":"#cbc7cf"
+    },
+    
+     "data": {
+      "url": "https://data.police.uk/api/crimes-street/all-crime?lat=50.608956&lng=-2.454880",
+      "format": {"type": "json"}
+    },
+  
+   "transform": [
+      {"calculate":"1", "as":"crime"}
+    ],
+  
+  "height": 300,
+    "width": 260,
+     
+    "mark": {
+      "type": "bar",
+      "color":"rgb(255, 173, 31)"
+    },
+   
+    "encoding": {
+  
+      "x": {
+        "field": "crime",
+        "aggregate": "sum"
+        "type": "quantitative",
+        "title": null,
+        "axis": {
+          "grid": false,
+         "labelColor":"antiquewhite"}
+      },
+  
+      "y": {
+        "field": "category",
+        "sort":"-x",
+        "type": "ordinal",
+        "title": null,
+        "axis": {
+          "grid": false,
+          "labelColor":"antiquewhite"}
+      },
+
+       "color": {
+        "field": "date",
+        "XYZscale":{"scheme":"oranges"},
+        "scale":{"range":["rgb(255, 173, 31)"]},
+        "type": "temporal",
+        "title": null,
+        "legend":null
+      }
+  }
+}
