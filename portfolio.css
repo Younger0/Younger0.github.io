@@ -48,6 +48,7 @@ h4, p{
     border-radius: 5px;
     border-color: #FFB347;
     margin: 0px 0px 20px 0px;
+    align-items: center;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet');
