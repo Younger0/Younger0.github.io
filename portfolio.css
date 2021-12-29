@@ -40,12 +40,13 @@ h4, p{
 }
 
 .chart{
-    width: auto;
-    border-width: 0px;
     background-color: white;
+    width:450px;
+    border-width: 3px;
     border-style: solid;
     border-radius: 5px;
-    border-color: #FFAA00;
+    border-color: #FFB347;
+    margin: 0px 0px 20px 0px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet');
