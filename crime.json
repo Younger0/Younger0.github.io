@@ -4,10 +4,10 @@
       "description": "Police Crime chart",
   
       "title": {
-       "text": "Crime at Buckingham Town Centre",
+       "text": "Crime in Weymouth",
        "anchor": "start",
        "color": "black",
-       "subtitle":"Recent crime by type of offence. Source: Police API.",
+       "subtitle":"Recent crime by offence category. Source: Police API.",
        "subtitleFontStyle":"italic",
        "subtitleFontSize":10,
        "subtitleColor":"black"
@@ -23,25 +23,12 @@
     "height":300,
       
     "mark": {
-      "type": "bar", 
-      "color": "#86d0bb"},
+      "type": "arc", 
+      "innerRadius": 80},
          
     "encoding": {
-        
-      "x": {
-        "field": "category",
-        "type": "nominal",
-        "sort": "-y",
-        "axis": {
-          "title": null,
-          "grid": false,
-          "ticks": false,
-          "labelAngle": 45
-          
-        }
-      }
       
-      "y": {
+      "theta": {
         "aggregate": "sum",
         "field": "crime", 
         "type": "quantitative"},
