@@ -1,48 +1,12 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-
-    "title": {
-      "text": "Bryson DeChambeau Tournament Finishes ",
-      "subtitle":"2020/21 Season   Source: ASA.com",
-      "subtitleFontStyle":"italic",
-      "subtitleFontSize":10,
-      "anchor": "start",
-      "color": "black"},
-
+    "description": "US inflation",
+    "data": {"url": "https://github.com/Younger0/Younger0.github.io/blob/main/brysondechambeau.csv"},
     
-    "data": {
-      "url": "https://github.com/Younger0/Younger0.github.io/blob/main/brysondechambeau.csv",
-      "format": {"type": "csv"}
-    },
-   
-    "height": 300,
-    "width": 400,
-   
-    "mark": {"type": "line", "point": false},
-    
+    "mark": "line",
     "encoding": {
-      
-      "x": {
-        "field": "date",
-        "type": "temporal",
-        "title": null,
-        "axis": {"grid": false}},
-   
-      "y": {
-        "field": "Finish",
-        "type": "quantitative",
-        "title": null,
-        "axis": {"grid": false}},
-
-      "color": {
-        "field": "Finish",
-        "type": "nominal",
-        "scale": {"scheme": "tableau10"},
-        "title": null,
-        "legend": {"orient": "top-right"}
-   
-     }
+      "x": {"field": "date", "type": "temporal"},
+      "y": {"field": "Finish", "type": "quantitative"}
+    }
   }
-}
-    
-   
+ 
