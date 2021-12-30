@@ -32,7 +32,7 @@
     "y": {
       "field": "value",
       "type": "quantitative",
-      "title": "Yield %",
+      "title": "Percentage %",
       "axis": {"grid": false}
     }
 }
