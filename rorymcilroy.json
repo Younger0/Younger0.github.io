@@ -20,11 +20,11 @@
   },
   "height": 450,
   "width": 450,
-  "mark":{"type":"bar", "color": "#051077"},
+  "mark":{"type":"line", "color": "#051077"},
   "encoding": {
     "x": {"field": "Date", 
       "type": "temporal", 
-      "axis": {"labelAngle": 0}
+      "axis": {"grid": false}
     },
     "y": {"field": "Finish", 
       "type": "quantitative",
