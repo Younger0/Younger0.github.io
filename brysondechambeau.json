@@ -1,0 +1,11 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Bryson DeChambeau Tournament Finishing Position 2020/21",
+    "data": {"url": "https://github.com/Younger0/Younger0.github.io/blob/main/brysondechambeau.csv"},
+    
+    "mark": "line",
+    "encoding": {
+      "x": {"field": "date", "type": "temporal"},
+      "y": {"field": "Finish", "type": "quantitative"},
+    }
+  }
