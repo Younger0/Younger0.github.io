@@ -18,8 +18,8 @@
       "anchor": "start",
       "color": "black"
   },
-  "height": 300,
-  "width": 300,
+  "height": 450,
+  "width": 450,
   "mark":{"type":"bar", "color": "#051077"},
   "encoding": {
     "x": {"field": "Date", 
@@ -32,7 +32,7 @@
     },
     "color": {
     "field": "Date",
-    "type": "nominal",
+    "type": "temporal",
     "scale": {"scheme": "darkblue"},
     "title": null,
     "legend": null
