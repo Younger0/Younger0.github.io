@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Rory McIlroy Tournament Finishes 2020/21",
+  "data": {
+    "values": [
+      {"Date": "14/15", "Finish": 61}, {"Date": "15/16", "Finish": 51}, {"Date": "16/17", "Finish": 42},
+      {"Date": "17/18", "Finish": 44}, {"Date": "18/19", "Finish": 28}, {"Date": "19/20", "Finish": 37},
+      {"Date": "20/21", "Finish": 36} 
+      ]
+  },
+  "title": {
+      "text": "Rory McIlroy Tournament Finishes 2020/21",
+      "subtitle": "Coded by manually inputting data into json file", 
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+  },
+  "height": 300,
+  "width": 300,
+  "mark":{"type":"bar", "color": "#051077"},
+  "encoding": {
+    "x": {"field": "Season", 
+      "type": "nominal", 
+      "axis": {"labelAngle": 0}
+    },
+    "y": {"field": "Number of Goals", 
+      "type": "quantitative",
+      "axis": {"grid": false }
+    },
+    "color": {
+    "field": "Season",
+    "type": "nominal",
+    "scale": {"scheme": "darkblue"},
+    "title": null,
+    "legend": null
+  }
+  }
+}
