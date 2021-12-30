@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+  "title": {
+    "text": "US Inflation 1960-2021",
+    "subtitle": "Source: AlphaVantage API",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+  
+   "data": {
+    "url": "https://www.alphavantage.co/query?function=INFLATION&interval=annual&apikey=J3RARCU5LNEG72FI",
+    "format": {"type": "json", "property": "data"}
+  },
+
+  "height": 300,
+  "width": "container",
+   
+  "mark": {"type": "line", "interpolate": "linear"},
+ 
+  "encoding": {
+
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Date",
+      "axis": {"grid": false}
+    },
+
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Yield %",
+      "axis": {"grid": false}
+    }
+}
+}
