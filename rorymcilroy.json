@@ -1,19 +1,13 @@
-  {
+   {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A simple bar chart with embedded data.",
   "title": {
     "text": "Rory McIlroy Tournament Finishes 2020/21",
-    "subtitle": "Soure: Advanced Sports Analytics",
-    "subtitleFontStyle": "Archivo",
-    "subtitleFontSize": 12,
+    "subtitle": "Source: Advanced Sports Analytics",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
     "anchor": "start",
-    "color": "black",
-    "fontSize": 16,
-    "font": "Archivo"
+    "color": "black"
   },
- "config": {"background": "#fffdfd", "view": {"stroke": "transparent"}},
-  "height": "450px",
-  "width": "450px",
   "data": {
     "values": [
       {"x": "2021-09-05", "y": 14}, {"x": "2021-08-29", "y": 4}, {"x": "2021-08-23", "y": 43},
@@ -23,14 +17,29 @@
       {"x": "2020-10-25", "y": 17}, {"x": "2020-10-18", "y": 21}, {"x": "2020-09-20", "y": 8}, 
     ]
   },
-  "mark": {"type": "line", "interpolate": "monotone", "color": "black", "strokeWidth":4},
+  "height": 300,
+  "width": 310,
+  "mark": {"type": "line", "point": false, "color": "indianred"},
   "encoding": {
     "x": {
       "field": "x",
       "type": "temporal",
-      "axis": {"labelAngle": 0},
-      "title": ""
+      "title": "Date",
+      "axis": {"grid": false}
     },
-    "y": {"field": "y", "type": "quantitative", "title": ""}
+    "y": {
+      "field": "y",
+      "type": "quantitative",
+      "scale": {"domain": [60, 0]},
+      "title": "Finishing Position",
+      "axis": {"grid": false}
+    },
+    "color": {
+      "field": "",
+      "type": "nominal",
+      "scale": {"scheme": "set1"},
+      "title": "Area",
+      "legend": {"orient": "top-left", "fillColor": "transparent"}
+    }
   }
 }
