@@ -1,11 +1,3 @@
-
-    "values": [
-      {"Date": "2021-09-05", "Finish": 14}, {"Date": "2021-08-29", "Finish": 4}, {"Date": "2021-08-23", "Finish": 43},
-      {"Date": "2021-08-08", "Finish": 12}, {"Date": "2021-06-20", "Finish": 7}, {"Date": "2021-06-06", "Finish": 18},
-      {"Date": "2021-05-23", "Finish": 49}, {"Date": "2021-05-09", "Finish": 1}, {"Date": "2021-03-07", "Finish": 10}, 
-      {"Date": "2021-02-28", "Finish": 6}, {"Date": "2021-02-07", "Finish": 13}, {"Date": "2021-01-31", "Finish": 16}, 
-      {"Date": "2020-10-25", "Finish": 17}, {"Date": "2020-10-18", "Finish": 21}, {"Date": "2020-09-20", "Finish": 8}, 
-      ]
   {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "A simple bar chart with embedded data.",
