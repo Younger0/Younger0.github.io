@@ -1,0 +1,39 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "data": {
+       "url": "https://raw.githubusercontent.com/Younger0/Younger0.github.io/main/data_FRED-DEXUSEU.json",
+       "format": {
+           "type":"json",
+           "property": "observations"}},
+
+
+    "title": {
+        "text": "US Dollar to Euro Exchange Rate",
+        "subtitle": "1971-2021",
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"},
+
+    "width":400,
+    "height":300,
+
+    "mark":{
+        "type": "line",
+        "color":"#099182",
+        "strokeWidth":2,
+        "opacity":1},
+ 
+
+    "encoding": {
+      "x": {
+          "field": "date",
+          "type": "temporal",
+          "title":null},
+      "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title":null}
+    }
+}
