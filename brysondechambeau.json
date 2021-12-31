@@ -6,7 +6,7 @@
     "mark": "line",
     "encoding": {
       "x": {"field": "date", "type": "temporal"},
-      "y": {"field": "Finish", "type": "quantitative", "range": [0,60]}
+      "y": {"field": "Finish", "type": "quantitative", "range": "inverted"}
     }
   }
  
