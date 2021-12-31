@@ -30,7 +30,7 @@
     "y": {
       "field": "y",
       "type": "quantitative",
-      "scale": {"domain": [60, 0]},
+      "scale": {"domain": [0, 60]},
       "title": "Finishing Position",
       "axis": {"grid": false}
     },
