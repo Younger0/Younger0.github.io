@@ -32,11 +32,14 @@
             "y": {
                 "field": {"repeat": "layer"},
                 "type": "quantitative",
-                "title": null},
+                "title": null,
+                "domain": [40,100]
+            
+            
     
             "color": {
                 "datum": {"repeat": "layer"},
-                "scale": {"range": ["lightblue", "pink"]}}
+                "scale": {"range": ["#1B0CE8", "#9C269E"]}}
           } 
       }
   }
