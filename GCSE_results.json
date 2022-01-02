@@ -2,8 +2,8 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
      
        "title": {
-        "text": "Proportion of GCSE entries awarded a C/4 or higher in the United Kingdom between 2000 and 2021, by gender",
-        "subtitle":"Source: Statista",
+        "text": "% of GCSE entries awarded a C/4 or higher",
+        "subtitle":"United Kingdom 2000 and 2021, by genderSource: Statista",
         "subtitleFontStyle":"italic",
         "subtitleFontSize":10,
         "anchor": "start",
