@@ -10,7 +10,7 @@
     "color": "black"
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/Younger0/Younger.github.io/main/film_data.csv"
+    "url": "https://raw.githubusercontent.com/Younger0/Younger0.github.io/main/film_data.csv"
   },
   "mark": {"type": "bar", "color": "#B0C4DE", "strokeWidth": 2, "opacity": 1},
   "height": 300,
