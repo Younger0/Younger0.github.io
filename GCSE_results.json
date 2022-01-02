@@ -2,8 +2,8 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
      
        "title": {
-        "text": "GCSE Results 2000-2021",
-        "subtitle":"Proportion of GCSE entries awarded a C/4 or higher in the United Kingdom between 2000 and 2021, by gender  Source: Statista.",
+        "text": "Proportion of GCSE entries awarded a C/4 or higher in the United Kingdom between 2000 and 2021, by gender",
+        "subtitle":"Source: Statista",
         "subtitleFontStyle":"italic",
         "subtitleFontSize":10,
         "anchor": "start",
@@ -32,14 +32,11 @@
             "y": {
                 "field": {"repeat": "layer"},
                 "type": "quantitative",
-                "title": null,
-                "domain": [40,100]}
-            
-            
+                "title": null},
     
             "color": {
                 "datum": {"repeat": "layer"},
-                "scale": {"range": ["#1B0CE8", "#9C269E"]}}
+                "scale": {"range": ["lightblue", "pink"]}}
           } 
       }
   }
