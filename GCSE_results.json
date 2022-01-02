@@ -2,8 +2,8 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
      
        "title": {
-        "text": "Declining populations",
-        "subtitle":"Cumulative % change in population. Source: UN.",
+        "text": "GCSE Results 2000-2021",
+        "subtitle":"Proportion of GCSE entries awarded a C/4 or higher in the United Kingdom between 2000 and 2021, by gender  Source: Statista.",
         "subtitleFontStyle":"italic",
         "subtitleFontSize":10,
         "anchor": "start",
