@@ -33,7 +33,7 @@
                 "field": {"repeat": "layer"},
                 "type": "quantitative",
                 "title": null,
-                "domain": [40,100]
+                "domain": [40,100]}
             
             
     
