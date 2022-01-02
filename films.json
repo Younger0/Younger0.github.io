@@ -20,6 +20,6 @@
     "x": {
       "field": "gross",
       "type": "quantitative",
-      "title": null}
+      "title": "USD ($) billions}
     }
   }
