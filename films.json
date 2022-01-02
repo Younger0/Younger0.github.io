@@ -21,7 +21,7 @@
       "field": "gross",
       "type": "quantitative",
       "title": null,
-      "scale": {"domain": [0, 180]}
+      "scale": {"domain": [0, 4000000000]}
     }
   }
 }
