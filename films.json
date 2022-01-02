@@ -2,15 +2,15 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Films Data",
   "title": {
-    "text": "Highest Grossing Films of All Time as of 2020",
-    "subtitle": "Adjusted for inflation",
+    "text": "Highest Grossing Films of All Time",
+    "subtitle": "Adjusted for inflation as of 2020",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
     "color": "black"
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/Younger0/Younger0.github.io/main/films_data.csv"
+    "url": "https://raw.githubusercontent.com/Younger0/Younger.github.io/main/films_data.csv"
   },
   "mark": {"type": "bar", "color": "#B0C4DE", "strokeWidth": 2, "opacity": 1},
   "height": 300,
