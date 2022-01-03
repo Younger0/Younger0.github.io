@@ -5,8 +5,9 @@
     
     "mark": "line",
     "encoding": {
-      "x": {"field": "date", "type": "temporal"},
-      "y": {"field": "Finish", "type": "quantitative", "scale": {"domain": [55, 0]}}
+      "x": {"field": "date", "type": "temporal", "title": "Date"},
+      "y": {"field": "Finish", "type": "quantitative", "scale": {"domain": [55, 0]}, "title": "Finishing Position"}
     }
+    
   }
  
