@@ -32,11 +32,13 @@
             "y": {
                 "field": {"repeat": "layer"},
                 "type": "quantitative",
-                "title": null},
+                "title": "Percentage (%)",
+                "scale": {"domain": [50, 85]}
+                },
     
             "color": {
                 "datum": {"repeat": "layer"},
-                "scale": {"range": ["lightblue", "pink"]}}
+                "scale": {"range": ["#2771DE","#9C269E"]}}
           } 
       }
   }
