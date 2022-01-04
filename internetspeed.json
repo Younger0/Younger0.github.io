@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "",
+  "title": {
+    "text": "Internet Connection Speeds in 2019 and 2020",
+    "subtitle": " Source: OpenSignal",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/Younger0/Younger0.github.io/main/internetspeed.csv"
+  },
+  "height": 300,
+  "width": "container",
+  "mark": {"type": "bar", "color": "#EE4F4F"},
+  "transform": [
+    {"filter": "datum.year==year"},
+    {
+      "filter": {
+        "field": "country",
+        "oneOf": [
+          "UK",
+          "Canada",
+          "France",
+          "Japan",
+          "Italy",
+          "Germany"
+        ]
+      }
+    }
+  ],
+  "params": [
+    {
+      "name": "year",
+      "value": 2020,
+      "bind": {
+        "input": "range",
+        "min": 2019,
+        "max": 2020,
+        "step": 1,
+        "name": "Select the year:"
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "country",
+      "type": "ordinal",
+      "title": "Country",
+      "axis": {"grid": false}
+    },
+    "y": {
+      "field": "avginternetspeed",
+      "type": "quantitative",
+      "title": "Download Speed (Mbps)",
+      "axis": {"grid": false, "labelAngle": 0},
+      "sort": "-x"
+    },
+    "tooltip": [
+      {"field": "country", "title": "Country"},
+      {"field": "avginternetspeed", "title": "Percentage of deaths"}
+    ]
+  }
+}
