@@ -22,7 +22,7 @@
       "grid": {"type": "interval", "bind": "scales"}
     },
     
-    "mark": {"type": "square", "opacity": 0.4, "color":"#65F25B"},
+    "mark": {"type": "square", "opacity": 0.8, "color":"#65F25B"},
   
     "encoding": {
       "x": {
