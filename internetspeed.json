@@ -60,7 +60,7 @@
     },
     "tooltip": [
       {"field": "country", "title": "Country"},
-      {"field": "avginternetspeed", "title": "Percentage of deaths"}
+      {"field": "avginternetspeed", "title": "Average Download Speed (Mbps)"}
     ]
   }
 }
