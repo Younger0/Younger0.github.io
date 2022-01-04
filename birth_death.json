@@ -11,7 +11,7 @@
     },
    
     "height": 300,
-    "width": 260,
+    "width": "container",
   
     "data": {
       "url": "https://raw.githubusercontent.com/Younger0/Younger0.github.io/main/birth_death_data.csv"
