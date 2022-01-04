@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "description": "Random values",
   "title": {
-    "text": "Rory McIlroy Tournament Finishes 2020/21 Season",
+    "text": "Rory McIlroy Tournament Finishes 2020/21",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
