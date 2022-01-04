@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "Bryson DeChambeau Tournament Finishes 2020/21",
     "data": {"url": "https://raw.githubusercontent.com/Younger0/Younger0.github.io/main/brysondechambeau.csv"},
-    "height": 300,
+    "height": 350,
     "width": "container",
     "mark": "line",
     "encoding": {
