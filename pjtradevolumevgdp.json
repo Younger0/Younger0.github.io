@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Younger0/Younger0.github.io/main/projectdata_volumevgdp.csv"
+  },
+  "title": {
+    "text": "International Trade Volume against GDP per Capita (2019)",
+    "subtitle": [
+      "Source: World Population Review, World Trade Organization"
+    
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "background": "white",
+  "width": "container",
+  "height": 350,
+  "layer": [
+    {
+      "mark": {"type": "circle"},
+      "encoding": {
+        "color": {
+          "field": "totalmerchandisevolume",
+          "type": "quantitative",
+          "scale": {"scheme": "category10"},
+          "legend": {"orient": "bottom-right", "title": "Total Trade Volume"}
+        }
+      }
+    },
+    {
+      "mark": {"type": "line", "color": "black", "size": 3},
+      "transform": [
+        {"regression": "gdpPerCapita", "on": "totalmerchandisevolume"}
+      ]
+    }
+  ], 
+
+
+  "encoding": {
+    "x": {
+      "field": "totalmerchandisevolume",
+      "type": "quantitative",
+      "axis": {"title": "Total Trade Volume ('000s)($)"},
+      "scale": {"type":"sqrt", "domain": [0, 2000000]}
+    },
+    "y": {
+      "field": "gdpPerCapita",
+      "title": null,
+      
+      "type": "quantitative",
+      "scale": {"type": "sqrt", "domain": [0, 130000]},
+      "axis": {"title": "GDP Per Capita ($)"}
+    },
+    "size": {"field": "gdpPerCapita", "type": "quantitative", "legend": null},
+    "tooltip": [
+      {"field": "Country", "type": "ordinal", "title": "Country"},
+      {"field": "gdpPerCapita", "type": "quantitative", "title": "GDP Per Capita ($)"},
+      {"field": "totalmerchandisevolume", "type": "quantitative", "title": "Trade Volume ('000s)($)"}
+    ]
+  }
+}
