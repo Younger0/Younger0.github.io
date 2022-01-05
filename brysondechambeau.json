@@ -1,14 +1,25 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "Bryson DeChambeau Tournament Finishes 2020/21",
+     "title": {
+    "text": "Bryson DeChambeau Tournament Finishes 2020/21",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
     "data": {"url": "https://raw.githubusercontent.com/Younger0/Younger0.github.io/main/brysondechambeau.csv"},
     "height": 350,
     "width": "container",
-    "mark": "line",
+    "mark": {
+    "type": "line",
+    "point": true,
+    "interpolate": "linear",
+    "color": "green"
+  },
     "encoding": {
       "x": {"field": "date", "type": "temporal", "title": "Date"},
       "y": {"field": "Finish", "type": "quantitative", "scale": {"domain": [55, 0]}, "title": "Finishing Position"}
     }
     
   }
- 
