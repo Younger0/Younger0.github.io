@@ -1,0 +1,88 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+
+ "title": {
+  "text": "World Trade Tariff Rate vs World GDP",
+  "subtitle":"1988-2017 Source: World Bank",
+  "subtitleFontStyle":"italic",
+  "subtitleFontSize":10,
+  "anchor": "start"},
+
+  "width":260,
+  "height":300,
+
+
+  "data": {
+    "name":"myData",
+    "url": "https://raw.githubusercontent.com/Younger0/Younger0.github.io/main/tariffs_gdp.csv"},
+
+
+  "encoding": {     
+      "x": {
+        "field": "Year",
+        "title":null,
+        "type": "temporal"}
+        },
+          
+   "layer":[
+
+      {"mark": {
+          "type": "line",
+          "size": 4,
+          "point": false,
+          "strokeWidth":2,
+          "width":1
+        },
+
+      "encoding": {
+          "y": {
+          "field": "Tariff rate (%)",
+          "type": "quantitative",
+          "title": "Tariff Rate (%)",
+          "axis": {
+            "grid": false,            
+            "labelColor":"black",
+            "format":",.5"}
+            },
+            
+          "color": {
+            "datum": "Tariff rate (%)",
+            "scale": {"range": ["red", "green"]},
+            "legend":{
+              "orient": "bottom-right"}}}
+      },
+
+     {"mark": {
+          "type": "line",
+          "point": false,
+          "strokeWidth":2
+        },
+
+      "encoding": {
+          "y": {
+          "field": "GDP (current US$)",
+          "type": "quantitative",
+          "title": "GDP (current US$)",
+          "axis": {
+            "grid": false,
+            "labelColor":"black",
+            "format":""
+          
+            }
+            },
+            
+          "color": {
+            "datum": "GDP (current US$)",
+            "scale": {"range": ["red", "green"]},
+            "legend":{
+              "orient": "bottom-right"}}
+            
+          
+        
+        } 
+    }
+],
+
+    "resolve": {"scale": {"y": "independent"}} 
+}
