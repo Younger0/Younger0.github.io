@@ -17,14 +17,19 @@ color: white;
 align-items:center;
 }
 
-.chart{
-    width: 330px;
-    border-width: 10px;
-    background-color: white;
-    border-style: solid;
-    border-radius: 5px;
-    border-color: white;
-    margin: auto;
+.chart {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    width: 400px;
+    height: 390px;
+    margin: 10px;
+    padding: 5px;
+    background-color: White;
+    border: #FFAD00 solid 5px;
+    border-radius: 10px;
+    font-size: 10pxp;
+}
 
 }
 
