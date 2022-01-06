@@ -15,8 +15,8 @@
     "color": "black"
   },
   "background": "white",
-  "width": "450",
-  "height": 350,
+  "width": "290",
+  "height": 300,
   "layer": [
     {
       "mark": {"type": "circle"},
