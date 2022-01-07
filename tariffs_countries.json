@@ -23,7 +23,7 @@
 
       "tooltip": [
       {"field": "country", "title": "Country"},
-      {"field": "tariffrate(%)", "title": "Mean Tariff Rate (%)"}
+      {"field": "tariffrate(%)", "title": "Average Download Speed (Mbps)"}
     ],
       "color": {
       "field": "country",
@@ -35,7 +35,7 @@
     }
   }, {
     "height": 300,
-    "width": 50,
+    "width": "container",
     "params": [{
       "name": "brush",
       "select": {
@@ -57,7 +57,7 @@
       },
       "tooltip": [
       {"field": "country", "title": "Country"},
-      {"field": "tariffrate(%)", "title": " Mean Tariff Rate (%)"}
+      {"field": "tariffrate(%)", "title": "Average Download Speed (Mbps)"}
     ]
     }
   }]
