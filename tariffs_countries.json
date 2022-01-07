@@ -1,0 +1,64 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/Younger0/Younger0.github.io/main/tariffcountry_data.csv"},
+  "hconcat": [{
+    "mark": "bar",
+    "transform": [{
+      "filter": {"param": "brush"}
+    }],
+    "encoding": {
+      "y": {
+        "field": "country",
+        "type": "ordinal",
+        "axis": {"minExtent": 200, "title": null},
+        "sort": "-x"
+      },
+      "x": {
+        "aggregate": "sum",
+        "field": "tariffrate(%)",
+        "scale":{"domain":  [0, 118]},
+        "axis": {"orient": "top"},
+        "title": "Tariff Rate (%)"
+      },
+
+      "tooltip": [
+      {"field": "country", "title": "Country"},
+      {"field": "tariffrate(%)", "title": "Mean Tariff Rate (%)"}
+    ],
+      "color": {
+      "field": "country",
+      "type": "nominal",
+      "legend": null,
+      "scale": {"scheme": "category10"}
+      
+    }
+    }
+  }, {
+    "height": 300,
+    "width": 50,
+    "params": [{
+      "name": "brush",
+      "select": {
+        "type": "interval",
+        "encodings": ["y"]
+      }
+    }],
+    "mark": "bar",
+    "encoding": {
+      "y": {
+        "field": "country",
+        "type": "nominal",
+        "sort": "-x",
+        "axis": null
+      },
+      "x": {
+        "aggregate": "count",
+        "axis": null
+      },
+      "tooltip": [
+      {"field": "country", "title": "Country"},
+      {"field": "tariffrate(%)", "title": " Mean Tariff Rate (%)"}
+    ]
+    }
+  }]
+}
