@@ -10,7 +10,7 @@
     "color": "black"
   },
   "height": 300,
-  "width": 350,
+  "width": 290,
   "encoding": {
     "x": {
       "field": "date",
