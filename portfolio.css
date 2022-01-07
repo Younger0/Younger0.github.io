@@ -3,9 +3,10 @@ body{
     max-width: 1000px;
     margin: auto;
     align-items: center;
+    text-align:center
 }
 
-h1, p{
+h1{
     color: #E9DDB1;
     font-family: 'Archivo', sans-serif;
     align-items: center;
@@ -16,32 +17,28 @@ h1, p{
 h2, p{
     color: #ffffff;
     font-family: 'Archivo';
-    align-items: top;
-    text-align: left;
+    align-items: center;
+    text-align: center;
     font-size: 30px;
-    display:flex;
 }
 
 h3, p{
     color: #ffffff;
     font-family: 'Archivo';
-    align-items: top;
-    text-align: left;
+    align-items: center;
+    text-align: center;
     font-size: 30px;
-    display:flex;
 }
 
 h4, p{
     color: #ffffff;
     font-family: 'Archivo';
-    align-items: top;
-    text-align: left;
+    align-items: center;
+    text-align: center;
     font-size: 30px;
-    display:flex;
 }
 
 .chart {
-    display: flex;
     align-items: center;
     justify-content: center;  
     width: 400px;
@@ -52,6 +49,7 @@ h4, p{
     border: #FFAD00 solid 5px;
     border-radius: 10px;
     font-size: 10pxp;
+    text-align: center
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet');
