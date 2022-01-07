@@ -10,7 +10,7 @@
       "y": {
         "field": "country",
         "type": "ordinal",
-        "axis": {"minExtent": 200, "title": null},
+        "axis": {"minExtent": 0, "title": null},
         "sort": "-x"
       },
       "x": {
@@ -23,19 +23,19 @@
 
       "tooltip": [
       {"field": "country", "title": "Country"},
-      {"field": "tariffrate(%)", "title": "Average Download Speed (Mbps)"}
+      {"field": "tariffrate(%)", "title": "Mean Tariff Rate (%)"}
     ],
       "color": {
       "field": "country",
       "type": "nominal",
       "legend": null,
-      "scale": {"scheme": "category10"}
+      "scale": {"scheme": "bluepurple"}
       
     }
     }
   }, {
     "height": 300,
-    "width": "container",
+    "width": 290,
     "params": [{
       "name": "brush",
       "select": {
@@ -57,7 +57,7 @@
       },
       "tooltip": [
       {"field": "country", "title": "Country"},
-      {"field": "tariffrate(%)", "title": "Average Download Speed (Mbps)"}
+      {"field": "tariffrate(%)", "title": "Mean Tariff Rate (%)"}
     ]
     }
   }]
