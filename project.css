@@ -12,6 +12,14 @@ h1, p{
     font-size:50px;
 }
 
+h1{
+    color: #fffff;
+    font-family: 'Archivo', sans-serif;
+    align-items: center;
+    text-align: center;
+    font-size:50px;
+}
+
 p{font-family: 'Archivo', sans-serif;
 color: white;
 align-items:center;
