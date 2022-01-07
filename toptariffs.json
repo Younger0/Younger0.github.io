@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A bar chart",
+  "data": {"url": "https://raw.githubusercontent.com/Younger0/Younger0.github.io/main/toptariffcountries.csv"},
+    "title": {
+    "text": "Top 15 Highest Tariff Rate Countries",
+    "subtitle": ["Source: World Trade Organization"],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "background": "white",
+  "width": 280,
+  "height": 300,
+  "mark": {"type": "bar"},
+  "encoding": {
+    "y": {
+      "field": "country",
+      "type": "ordinal",
+      "sort": "-x",
+      "title": "Country"
+    },
+    "x": {
+      "aggregate": "sum",
+      "field": "tariffrate",
+      "title": "Tariff Rate (%)"
+    },
+    "color": {
+          "field": "tariffrate",
+          "title": "Tariff Rate",
+          "type": "quantitative",
+          "scale": {"scheme": "reds"}
+        },
+    "tooltip": [
+      {"field": "country", "title": "Country"},
+      {"field": "tariffrate", "title": "Mean Tariff Rate (%)"}
+    ]
+  }
+}
