@@ -28,9 +28,12 @@
     },
     "color": {
           "field": "tariffrate",
-          "title": "Tariff Rate",
+          "title": "",
           "type": "quantitative",
-          "scale": {"scheme": "reds"}
+          "scale": {"scheme": "reds"},
+          "legend": {"orient": "bottom-right"}
+        
+    
         },
     "tooltip": [
       {"field": "country", "title": "Country"},
