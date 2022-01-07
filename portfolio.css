@@ -40,17 +40,18 @@ h4, p{
     display:flex;
 }
 
-.chart{
-    background-color: white;
-    width:450px;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 5px;
-    border-color: #FFB347;
-    margin: auto;
+.chart {
+    display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    text-align: center;
+    justify-content: center;  
+    width: 400px;
+    height: 390px;
+    margin: 10px;
+    padding: 5px;
+    background-color: White;
+    border: #FFAD00 solid 5px;
+    border-radius: 10px;
+    font-size: 10pxp;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet');
