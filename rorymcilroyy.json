@@ -1,57 +1,58 @@
-    {
-  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "description": "Random values",
-  "title": {
-    "text": "Rory McIlroy Tournament Finishes 2020/21",
-    "subtitleFontStyle": "italic",
-    "subtitleFontSize": 10,
-    "anchor": "start",
-    "color": "black"
-  },
-  "data": {
-    "values": [
-        {"x": "2021-09-05", "y": 14},
-        {"x": "2021-08-29", "y": 4},
-        {"x": "2021-08-23", "y": 43},
-        {"x": "2021-08-08", "y": 12},
-        {"x": "2021-06-20", "y": 7},
-        {"x": "2021-06-06", "y": 18},
-        {"x": "2021-05-23", "y": 49},
-        {"x": "2021-05-09", "y": 1},
-        {"x": "2021-03-07", "y": 10},
-        {"x": "2021-02-28", "y": 6},
-        {"x": "2021-02-07", "y": 13},
-        {"x": "2021-01-31", "y": 16},
-        {"x": "2020-10-25", "y": 17},
-        {"x": "2020-10-18", "y": 21},
-        {"x": "2020-09-20", "y": 8}
-    ]
-  },
-  "height": 300,
-  "width": "container",
-  "mark": {
-    "type": "line",
-    "point": true,
-    "interpolate": "linear",
-    "color": "green"
-  },
-  "encoding": {
-    "x": {
-      "field": "x",
-      "type": "temporal",
-      "axis": {
-        "title": "",
-        "grid": true,
-        "labelSeparation": 14,
-        "ticks": false
-      }
+  {
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "description": "Random values",
+    "title": {
+      "text": "Rory McIlroy Tournament Finishes ",
+      "subtitle": "2020/21 Season. Source: ASA",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
     },
-    "y": {
-      "field": "y",
-      "type": "quantitative",
-      "title": "Finishing Position",
-      "axis": {"grid": false},
-      "scale": {"domain": [50, 0]}
+    "data": {
+      "values": [
+          {"x": "2021-09-05", "y": 14},
+          {"x": "2021-08-29", "y": 4},
+          {"x": "2021-08-23", "y": 43},
+          {"x": "2021-08-08", "y": 12},
+          {"x": "2021-06-20", "y": 7},
+          {"x": "2021-06-06", "y": 18},
+          {"x": "2021-05-23", "y": 49},
+          {"x": "2021-05-09", "y": 1},
+          {"x": "2021-03-07", "y": 10},
+          {"x": "2021-02-28", "y": 6},
+          {"x": "2021-02-07", "y": 13},
+          {"x": "2021-01-31", "y": 16},
+          {"x": "2020-10-25", "y": 17},
+          {"x": "2020-10-18", "y": 21},
+          {"x": "2020-09-20", "y": 8}
+      ]
+    },
+    "height": 300,
+    "width": "container",
+    "mark": {
+      "type": "line",
+      "point": true,
+      "interpolate": "linear",
+      "color": "green"
+    },
+    "encoding": {
+      "x": {
+        "field": "x",
+        "type": "temporal",
+        "axis": {
+          "title": "Month",
+          "grid": true,
+          "labelSeparation": 14,
+          "ticks": false
+        }
+      },
+      "y": {
+        "field": "y",
+        "type": "quantitative",
+        "title": "Finishing Position",
+        "axis": {"grid": false},
+        "scale": {"domain": [50, 0]}
+      }
     }
   }
-}
