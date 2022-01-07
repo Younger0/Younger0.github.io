@@ -39,6 +39,16 @@ align-items:center;
     text-align: center
 }
 
+.chart1{
+    background-color: white;
+    width: 500px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #FFAD00 solid 5px;
+    margin: 0px 125px 0px 125px;
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet');
 
