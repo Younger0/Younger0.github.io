@@ -13,7 +13,7 @@ h1, p{
 }
 
 h1{
-    color: #fffff;
+    color: #ffffff;
     font-family: 'Archivo', sans-serif;
     align-items: center;
     text-align: center;
@@ -26,7 +26,6 @@ align-items:center;
 }
 
 .chart {
-    display: flex;
     align-items: center;
     justify-content: center;  
     width: 400px;
@@ -37,6 +36,7 @@ align-items:center;
     border: #FFAD00 solid 5px;
     border-radius: 10px;
     font-size: 10pxp;
+    text-align: center
 }
 
 
