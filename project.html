@@ -30,41 +30,30 @@
         <button class="btn-3" onclick="location.href='https://github.com/Younger0/Younger0.github.io'">GitHub</button>
     </div>
  
-    <p>Under Construction</p>
+    <p style="font-size: 45px; color: white; border:3px; border-radius: 5px; border-style:solid; border-color:black; padding: 0.5em; background-color: black"> 
+        How Does International Trade Influence Economic Prosperity?</p>
     
-<!--Chart 20; project -->
-<div class="chart" id="chart20">
-    <script>
-        var myChart20 = "pjtradevolumevgdp.json";
-        vegaEmbed('#chart20', myChart20);
-    </script>
-</div>  
-    
-    <!--Chart 21; project -->
-<div class="chart" id="chart21">
-    <script>
-        var myChart21 = "tariffs_gdp.json";
-        vegaEmbed('#chart21', myChart21);
-    </script>
-</div>  
-    
-    <!--Chart 22; project -->
-<div class="chart" id="chart22">
-    <script>
-        var myChart22 = "NAFTA.json";
-        vegaEmbed('#chart22', myChart22);
-    </script>
-</div>  
-    
-    <!--Chart 23; project -->
+    <p style="font-size: 30px; color: black; border:3px; border-radius: 5px; border-style:solid; border-color:black; padding: 0.5em; background-color: #E9DDB1;"> 
+        Project Aim:To analyse the relationship between international trade and economic prosperity.</p>
+
+
+    <p style="font-size: 20px; color: white; border:3px; border-radius: 5px; border-style:solid; border-color:black; padding: 0.5em">  
+        Historically, international trade has been presented as a catalyst in economic growth. In 1817, David Ricardo presented his model of comparative advantage to demonstrate how a country of higher productive efficiency can still benefit by trading with a country of much lower productivity.  The discussion surrounding international trade has become particularly prominent in recent years, undoubtedly due to issues such as European Union scepticism and the rise of Donald Trump, or at least in part. These events inspired me to explore the nature of the relationship between engagement in international trade and economic prosperity. 
+     </p>
+
+     <p style="font-size: 20px; color: white; border:3px; border-radius: 5px; border-style:solid; border-color:black; padding: 0.5em">  
+    A significant indicator of a country’s openness to trade is its tariff rate. Tariffs are taxes on imports set by governments and are typically imposed in attempts to stimulate domestic production, as opposed to relying on foreign production. These first two charts illustrate the top and bottom 15 countries regarding weight mean average tariff rates, using data from the World Bank. Unfortunately, the datasets for each country were partially incomplete.  To resolve this, I used the most recent available year for each country and collated this into a csv file from which the charts were generated. 
+     </p>
+     
+<!--Chart 23; project -->
 <div class="chart" id="chart23">
     <script>
         var myChart23 = "toptariffs.json";
         vegaEmbed('#chart23', myChart23);
     </script>
 </div>  
-    
-    <!--Chart 24; project -->
+
+<!--Chart 24; project -->
 <div class="chart" id="chart24">
     <script>
         var myChart24 = "bottomtariffs.json";
@@ -72,6 +61,57 @@
     </script>
 </div>  
     
+<p style="font-size: 20px; color: white; border:3px; border-radius: 5px; border-style:solid; border-color:black; padding: 0.5em">  
+    Gross Domestic Product (GDP) is the most commonly used measure of economic prosperity and, as a result, I was interested to see how it correlates with engagement in trade. The chart below uses data from the World Bank concerning world GDP and the average world tariff rate.  
+     </p>
+
+    <!--Chart 21; project -->
+<div class="chart" id="chart21">
+    <script>
+        var myChart21 = "tariffs_gdp.json";
+        vegaEmbed('#chart21', myChart21);
+    </script>
+</div>  
+
+<p style="font-size: 20px; color: white; border:3px; border-radius: 5px; border-style:solid; border-color:black; padding: 0.5em">  
+    This chart shows, quite strikingly, that the reduction in average tariff rates across the world in the mid-1990s is accompanied by a simultaneous increase in world GDP. Whether or not this relationship is causal or not is unclear, yet it is undeniably an interesting occurrence. In order to gain further insight into this, I wanted to explore in more detail the trade patterns of each country, and how this relates to their GDP. As some countries have very high GDPs, yet still have a relatively poor standard of living, I instead decided to use GDP per capita to somewhat overcome this issue. The chart below illustrates this, using data from both the World Trade Organization and the World Population Review. As the data came from two separate sources, I decided to manually organise and group the data together into one csv file.   
+</p>
+
+  <!--Chart 20; project -->
+  <div class="chart" id="chart20">
+    <script>
+        var myChart20 = "pjtradevolumevgdp.json";
+        vegaEmbed('#chart20', myChart20);
+    </script>
+</div>  
+
+<p style="font-size: 20px; color: white; border:3px; border-radius: 5px; border-style:solid; border-color:black; padding: 0.5em">    
+    The chart appears to exhibit a positive correlation between trade volume and GDP per capita. However, interestingly, when a regression calculation is performed between the two variables, an R-squared value of only 0.0943 is returned, showing that the correlation is much weaker than first thought. This illusion is likely due to the square-root formatting of the axes. Furthermore, there are a number of outlying countries in the dataset that will have affected this calculation. For instance, Bermuda has an extremely high GDP per capita for such a small country. This is primarily due to its status as a tax haven, inviting offshore financial services. These types of country make it difficult to observe the true impact of international trade using just GDP.   
+</p>
+
+<p style="font-size: 20px; color: white; border:3px; border-radius: 5px; border-style:solid; border-color:black; padding: 0.5em">    
+    One of the main arguments against international trade, and for the imposition of tariffs, is the protection of domestic production industries. Outsourcing production from developed to developing countries has increased rapidly with globalisation, leading many to become concerned, and outraged, at the prospect of losing jobs, Donald Trump being counted among these people. I wanted to determine if this was really the case. The North American Free Trade Agreement (NAFTA) is one of the biggest free trade agreements in the world, which came into force in 1994. Using data from FRED, I used Google Colaboratory to generate an API loop to batch download JSON data for each member country  
+</p>
+
+  <!--Chart 22; project -->
+  <div class="chart" id="chart22">
+    <script>
+        var myChart22 = "NAFTA.json";
+        vegaEmbed('#chart22', myChart22);
+    </script>
+</div>  
+
+<p style="font-size: 20px; color: white; border:3px; border-radius: 5px; border-style:solid; border-color:black; padding: 0.5em">    
+    The chart shows that all three member countries experienced a decrease, rather than an increase, in unemployment rates, following the introduction of the agreement in 1994. While it is true that outsourcing can lead to job loss in some areas, this provides evidence against the notion that increased trade harms employment.
+</p>
+    
+<p style="font-size: 30px; color: black; border:3px; border-radius: 5px; border-style:solid; border-color:black; padding: 0.5em; background-color: #E9DDB1;"> 
+    Conclusion</p>
+
+<p style="font-size: 20px; color: white;border:3px; border-radius: 5px; border-style:solid; border-color:black; padding: 0.5em">    
+    There are many influencing factors in the determination of a country’s economic prosperity and, as  such, it is difficult to isolate the causal impact of international trade among these influences. I would argue that these data presentations, if anything, faintly point towards a positive relationship between openness to international trade and economic prosperity, in terms of reduced unemployment and greater world GDP. In hindsight, it was perhaps over-ambitious to attempt to provide a definitive conclusion to such a complex question, given the restrictions. Despite this, I believe the data presented in these visualizations would be useful for more detailed debate on the topic. 
+</p>
+
 </body>
   
 </html>
