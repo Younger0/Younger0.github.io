@@ -14,7 +14,7 @@
   },
   "mark": {"type": "bar", "color": "#B0C4DE", "strokeWidth": 2, "opacity": 1},
   "height": 300,
-  "width": 250,
+  "width": "container",
   "encoding": {
     "y": {"field": "title", "type": "ordinal", "sort": [], "title": null},
     "x": {
