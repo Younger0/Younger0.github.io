@@ -19,8 +19,8 @@
       {"calculate":"1", "as":"crime"}
     ],
   
-    "width":285,
-    "height":300,
+    "width":"container",
+    "height":320,
       
     "mark": {
       "type": "arc", 
