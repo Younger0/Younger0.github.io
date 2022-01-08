@@ -16,7 +16,7 @@
         "anchor": "start",
         "color": "black"},
 
-    "width":400,
+    "width":"container",
     "height":300,
 
     "mark":{
@@ -30,7 +30,7 @@
       "x": {
           "field": "date",
           "type": "temporal",
-          "title":null},
+          "title":"Year"},
       "y": {
           "field": "value",
           "type": "quantitative",
