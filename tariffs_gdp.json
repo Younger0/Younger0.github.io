@@ -9,7 +9,7 @@
   "subtitleFontSize":10,
   "anchor": "start"},
 
-  "width":290,
+  "width":"container",
   "height":300,
 
 
