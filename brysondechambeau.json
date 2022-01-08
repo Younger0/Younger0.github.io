@@ -9,7 +9,7 @@
     "color": "black"
   },
     "data": {"url": "https://raw.githubusercontent.com/Younger0/Younger0.github.io/main/brysondechambeau.csv"},
-    "height": 350,
+    "height": 300,
     "width": "container",
     "mark": {
     "type": "line",
