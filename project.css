@@ -2,6 +2,8 @@ body{
     background-color: #202959;
     max-width: 1000px;
     margin: auto;
+    align-items: center;
+    text-align: center
 }
 
 h1, p{
