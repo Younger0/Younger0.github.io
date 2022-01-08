@@ -9,14 +9,14 @@
 
 
     "title": {
-        "text": "US Dollar to New Zealand Dollar Exchange Rate",
+        "text": "USD($) to N.Z. Dollar Exchange Rate",
         "subtitle": "1971-2021",
         "subtitleFontStyle":"italic",
         "subtitleFontSize":10,
         "anchor": "start",
         "color": "black"},
 
-    "width":400,
+    "width":"container",
     "height":300,
 
     "mark":{
@@ -30,7 +30,7 @@
       "x": {
           "field": "date",
           "type": "temporal",
-          "title":null},
+          "title":"Year"},
       "y": {
           "field": "value",
           "type": "quantitative",
