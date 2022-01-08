@@ -12,7 +12,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/Younger0/Younger0.github.io/main/internetspeed.csv"
   },
-  "height": 250,
+  "height": 230,
   "width": "container",
   "mark": {"type": "bar", "color": "#EE4F4F"},
   "transform": [
