@@ -2,8 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "",
   "title": {
-    "text": "Internet Connection Speeds (2019 - 2020)",
-    "subtitle": " Source: OpenSignal",
+    "text": "Internet Connection Speeds",
+    "subtitle": "2019 - 2020 Source: OpenSignal",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
@@ -12,7 +12,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/Younger0/Younger0.github.io/main/internetspeed.csv"
   },
-  "height": 400,
+  "height": 300,
   "width": "container",
   "mark": {"type": "bar", "color": "#EE4F4F"},
   "transform": [
