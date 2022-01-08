@@ -7,7 +7,7 @@
         }
     },
     "title": {
-        "text": "Regressing the S&P500 Against the FTSE100",
+        "text": "S&P500 Against FTSE100",
         "subtitle": "2012 - 2021. Source: Yahoo Finance",
         "subtitleFontStyle": "italic",
         "subtitleFontSize": 10,
