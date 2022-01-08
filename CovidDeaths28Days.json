@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     
     "title": {
-      "text": "Deaths within 28 days of a positive test",
+      "text": "Deaths within 28 days of positive test",
       "subtitle":"Comparison of three UK towns and cities",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
